@@ -1,0 +1,726 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "agent1",
+      "password": "pass",
+      "role": "agent",
+      "name": "Agent One"
+    },
+    {
+      "id": "2",
+      "username": "manager1",
+      "password": "pass",
+      "role": "manager",
+      "name": "Manager One"
+    },
+    {
+      "id": "3",
+      "username": "admin",
+      "password": "pass",
+      "role": "admin",
+      "name": "Admin User"
+    }
+  ],
+  "merchants": [
+    {
+      "id": "b225",
+      "businessName": "Skarp Electronics",
+      "businessType": "online",
+      "businessAddress": "Andheri East, Mumbai, Maharashtra, India",
+      "taxId": "GSTIN27ABCDE1234F1Z5",
+      "contactName": "Rohit Mehra",
+      "contactEmail": "rohit@skarpelectronics.com",
+      "contactPhone": "+91-9876543210",
+      "documents": {
+        "idProof": "uploaded",
+        "businessLicense": "verified"
+      },
+      "status": "active",
+      "created_at": "2025-11-25"
+    },
+    {
+      "id": "04e3",
+      "businessName": "Urban Threads",
+      "businessType": "retail",
+      "businessAddress": "Bandra West, Mumbai, Maharashtra, India",
+      "taxId": "GSTIN27ZXCVB5678H1Z2",
+      "contactName": "Sneha Kapoor",
+      "contactEmail": "sneha@urbanthreads.in",
+      "contactPhone": "+91-9123456780",
+      "documents": {
+        "idProof": "pending",
+        "businessLicense": "pending"
+      },
+      "status": "pending",
+      "created_at": "2025-11-25"
+    },
+    {
+      "id": "b76a",
+      "businessName": "FreshMart Groceries",
+      "businessType": "retail",
+      "businessAddress": "Powai, Mumbai, Maharashtra, India",
+      "taxId": "GSTIN27QWERT0987P1Z9",
+      "contactName": "Amit Kulkarni",
+      "contactEmail": "amit@freshmart.com",
+      "contactPhone": "+91-9988776655",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "verified"
+      },
+      "status": "active",
+      "created_at": "2025-11-24"
+    },
+    {
+      "id": "3581",
+      "businessName": "Brightline Services",
+      "businessType": "services",
+      "businessAddress": "Thane West, Maharashtra, India",
+      "taxId": "GSTIN27LMNOP4567R1Z3",
+      "contactName": "Neha Joshi",
+      "contactEmail": "neha@brightlineservices.in",
+      "contactPhone": "+91-9090909090",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "pending"
+      },
+      "status": "pending",
+      "created_at": "2025-11-25"
+    },
+    {
+      "id": "a990",
+      "businessName": "TechNest Solutions",
+      "businessType": "online",
+      "businessAddress": "Whitefield, Bengaluru, Karnataka, India",
+      "taxId": "GSTIN29ABCDE4321K1Z6",
+      "contactName": "Karthik Reddy",
+      "contactEmail": "karthik@technest.io",
+      "contactPhone": "+91-8888777766",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "verified"
+      },
+      "status": "active",
+      "created_at": "2025-11-23"
+    },
+    {
+      "id": "c112",
+      "businessName": "GreenLeaf Organics",
+      "businessType": "retail",
+      "businessAddress": "Baner, Pune, Maharashtra, India",
+      "taxId": "GSTIN27PLMNO7654S1Z1",
+      "contactName": "Priya Deshpande",
+      "contactEmail": "priya@greenleaforganics.in",
+      "contactPhone": "+91-9765432109",
+      "documents": {
+        "idProof": "pending",
+        "businessLicense": "pending"
+      },
+      "status": "suspended",
+      "created_at": "2025-11-22"
+    },
+    {
+      "id": "d450",
+      "businessName": "HomeStyle Furnishings",
+      "businessType": "retail",
+      "businessAddress": "Koregaon Park, Pune, Maharashtra, India",
+      "taxId": "GSTIN27HOMES1234F1Z8",
+      "contactName": "Arjun Khanna",
+      "contactEmail": "arjun@homestyle.in",
+      "contactPhone": "+91-9876501234",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "verified"
+      },
+      "status": "active",
+      "created_at": "2025-11-26"
+    },
+    {
+      "id": "e781",
+      "businessName": "Fitness Hub",
+      "businessType": "services",
+      "businessAddress": "Indiranagar, Bengaluru, Karnataka, India",
+      "taxId": "GSTIN29FITNES7890G1Z2",
+      "contactName": "Ravi Shetty",
+      "contactEmail": "contact@fitnesshub.in",
+      "contactPhone": "+91-9898989898",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "verified"
+      },
+      "status": "active",
+      "created_at": "2025-11-26"
+    },
+    {
+      "id": "f662",
+      "businessName": "Daily Needs Mart",
+      "businessType": "wholesale",
+      "businessAddress": "Sector 18, Noida, Uttar Pradesh, India",
+      "taxId": "GSTIN09DAILY4567W1Z5",
+      "contactName": "Suresh Yadav",
+      "contactEmail": "suresh@dailyneedsmart.in",
+      "contactPhone": "+91-9000001111",
+      "documents": {
+        "idProof": "pending",
+        "businessLicense": "pending"
+      },
+      "status": "pending",
+      "created_at": "2025-11-26"
+    },
+    {
+      "id": "g309",
+      "businessName": "StyleStreet Fashion",
+      "businessType": "online",
+      "businessAddress": "Connaught Place, New Delhi, India",
+      "taxId": "GSTIN07STYLE9900H1Z3",
+      "contactName": "Meera Gupta",
+      "contactEmail": "support@stylestreet.in",
+      "contactPhone": "+91-9112233445",
+      "documents": {
+        "idProof": "verified",
+        "businessLicense": "pending"
+      },
+      "status": "active",
+      "created_at": "2025-11-27"
+    },
+    {
+      "id": "h518",
+      "businessName": "QuickFix Electronics",
+      "businessType": "services",
+      "businessAddress": "Salt Lake, Kolkata, West Bengal, India",
+      "taxId": "GSTIN19QUICK1234K1Z1",
+      "contactName": "Anirban Das",
+      "contactEmail": "service@quickfix.in",
+      "contactPhone": "+91-9876512345",
+      "documents": {
+        "idProof": "pending",
+        "businessLicense": "pending"
+      },
+      "status": "suspended",
+      "created_at": "2025-11-27"
+    }
+  ],
+  "orders": [
+    {
+      "id": "101",
+      "merchant_id": 1,
+      "customer": "John Doe",
+      "merchant": "Acme Co",
+      "status": "delivered",
+      "amount": 120.5,
+      "payment_method": "Credit Card",
+      "created_at": "2025-11-01",
+      "items": [
+        {
+          "product_id": "P1001",
+          "name": "Wireless Mouse",
+          "qty": 1,
+          "price": 40.5
+        },
+        {
+          "product_id": "P1002",
+          "name": "Keyboard",
+          "qty": 1,
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "merchant_id": 1,
+      "customer": "Sarah Wilson",
+      "merchant": "Acme Co",
+      "status": "pending",
+      "amount": 50,
+      "payment_method": "UPI",
+      "created_at": "2025-11-02",
+      "items": [
+        {
+          "product_id": "P1003",
+          "name": "USB-C Cable",
+          "qty": 2,
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": "103",
+      "merchant_id": 1,
+      "customer": "Michael Brown",
+      "merchant": "Acme Co",
+      "status": "shipped",
+      "amount": 150,
+      "payment_method": "Cash on Delivery",
+      "created_at": "2025-12-01",
+      "items": [
+        {
+          "product_id": "P1004",
+          "name": "Bluetooth Speaker",
+          "qty": 1,
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "104",
+      "merchant_id": 2,
+      "customer": "Amit Sharma",
+      "merchant": "Grand Line Store",
+      "status": "processing",
+      "amount": 299.99,
+      "payment_method": "Credit Card",
+      "created_at": "2025-11-20",
+      "items": [
+        {
+          "product_id": "P2001",
+          "name": "Gaming Headset",
+          "qty": 1,
+          "price": 299.99
+        }
+      ]
+    },
+    {
+      "id": "105",
+      "merchant_id": 2,
+      "customer": "Neha Verma",
+      "merchant": "Grand Line Store",
+      "status": "cancelled",
+      "amount": 99.5,
+      "payment_method": "Wallet",
+      "created_at": "2025-11-21",
+      "items": [
+        {
+          "product_id": "P2002",
+          "name": "Phone Case",
+          "qty": 1,
+          "price": 99.5
+        }
+      ]
+    },
+    {
+      "id": "106",
+      "merchant_id": 3,
+      "customer": "Rahul Mehta",
+      "merchant": "All Blue Kitchen",
+      "status": "refunded",
+      "amount": 75,
+      "payment_method": "UPI",
+      "created_at": "2025-11-22",
+      "items": [
+        {
+          "product_id": "P3001",
+          "name": "Chef Knife",
+          "qty": 1,
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": "107",
+      "merchant_id": 1,
+      "customer": "Karan Patel",
+      "merchant": "Acme Co",
+      "status": "delivered",
+      "amount": 499,
+      "payment_method": "Net Banking",
+      "created_at": "2025-11-23",
+      "items": [
+        {
+          "product_id": "P1005",
+          "name": "Monitor",
+          "qty": 1,
+          "price": 499
+        }
+      ]
+    },
+    {
+      "id": "108",
+      "merchant_id": 3,
+      "customer": "Priya Singh",
+      "merchant": "All Blue Kitchen",
+      "status": "pending",
+      "amount": 35,
+      "payment_method": "Cash on Delivery",
+      "created_at": "2025-11-25",
+      "items": [
+        {
+          "product_id": "P3002",
+          "name": "Kitchen Gloves",
+          "qty": 1,
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": "109",
+      "merchant_id": 4,
+      "customer": "Ananya Desai",
+      "merchant": "TechZone",
+      "status": "delivered",
+      "amount": 899,
+      "payment_method": "Credit Card",
+      "created_at": "2025-11-26",
+      "items": [
+        {
+          "product_id": "P4001",
+          "name": "Wireless Earbuds",
+          "qty": 1,
+          "price": 899
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "merchant_id": 2,
+      "customer": "Rohit Verma",
+      "merchant": "Grand Line Store",
+      "status": "shipped",
+      "amount": 1299.99,
+      "payment_method": "Net Banking",
+      "created_at": "2025-11-26",
+      "items": [
+        {
+          "product_id": "P2003",
+          "name": "Office Chair",
+          "qty": 1,
+          "price": 1299.99
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "merchant_id": 1,
+      "customer": "Simran Kaur",
+      "merchant": "Acme Co",
+      "status": "processing",
+      "amount": 199,
+      "payment_method": "UPI",
+      "created_at": "2025-11-27",
+      "items": [
+        {
+          "product_id": "P1006",
+          "name": "Laptop Stand",
+          "qty": 1,
+          "price": 199
+        }
+      ]
+    },
+    {
+      "id": "112",
+      "merchant_id": 5,
+      "customer": "Vikram Singh",
+      "merchant": "HomeStyle",
+      "status": "delivered",
+      "amount": 349.5,
+      "payment_method": "Wallet",
+      "created_at": "2025-11-27",
+      "items": [
+        {
+          "product_id": "P5001",
+          "name": "Table Lamp",
+          "qty": 1,
+          "price": 349.5
+        }
+      ]
+    },
+    {
+      "id": "113",
+      "merchant_id": 3,
+      "customer": "Pooja Nair",
+      "merchant": "All Blue Kitchen",
+      "status": "cancelled",
+      "amount": 499,
+      "payment_method": "Cash on Delivery",
+      "created_at": "2025-11-28",
+      "items": [
+        {
+          "product_id": "P3003",
+          "name": "Non-stick Pan",
+          "qty": 1,
+          "price": 499
+        }
+      ]
+    },
+    {
+      "id": "114",
+      "merchant_id": 4,
+      "customer": "Aditya Joshi",
+      "merchant": "TechZone",
+      "status": "refunded",
+      "amount": 2599,
+      "payment_method": "Credit Card",
+      "created_at": "2025-11-28",
+      "items": [
+        {
+          "product_id": "P4002",
+          "name": "Smart Watch",
+          "qty": 1,
+          "price": 2599
+        }
+      ]
+    },
+    {
+      "id": "115",
+      "merchant_id": 2,
+      "customer": "Isha Gupta",
+      "merchant": "Grand Line Store",
+      "status": "pending",
+      "amount": 75,
+      "payment_method": "UPI",
+      "created_at": "2025-11-29",
+      "items": [
+        {
+          "product_id": "P2004",
+          "name": "Notebook Set",
+          "qty": 3,
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": "116",
+      "merchant_id": 1,
+      "customer": "Arjun Malhotra",
+      "merchant": "Acme Co",
+      "status": "delivered",
+      "amount": 1499,
+      "payment_method": "Net Banking",
+      "created_at": "2025-11-30",
+      "items": [
+        {
+          "product_id": "P1007",
+          "name": "Mechanical Keyboard",
+          "qty": 1,
+          "price": 1499
+        }
+      ]
+    }
+  ],
+  "reconciliations": [
+    {
+      "id": "001",
+      "transaction_id": "TXN-20251122-001",
+      "order_id": "7651fc19-f7e4-4b51-aff2-ba75956bd3fc",
+      "amount": 249.99,
+      "status": "balanced",
+      "method": "Credit Card",
+      "reconciled": false,
+      "date": "2025-11-22"
+    },
+    {
+      "id": "002",
+      "transaction_id": "TXN-20251122-002",
+      "order_id": "65c0c944-22a5-48d2-a452-9ba5cc7235f5",
+      "amount": 89.5,
+      "status": "balanced",
+      "method": "PayPal",
+      "reconciled": true,
+      "date": "2025-11-22"
+    },
+    {
+      "id": "003",
+      "transaction_id": "TXN-20251122-003",
+      "order_id": "a204861e-c7e5-463e-9515-24d7d38ed764",
+      "amount": 459,
+      "status": "balanced",
+      "method": "Credit Card",
+      "reconciled": false,
+      "date": "2025-11-22"
+    },
+    {
+      "id": "004",
+      "transaction_id": "TXN-20251123-004",
+      "order_id": "c50d9301-94c4-4c2e-a90f-28e9f64b7c11",
+      "amount": 129.99,
+      "status": "mismatch",
+      "method": "UPI",
+      "reconciled": false,
+      "date": "2025-11-23",
+      "issue": "Amount mismatch between gateway and internal records"
+    },
+    {
+      "id": "005",
+      "transaction_id": "TXN-20251123-005",
+      "order_id": "b72a4e98-8c79-4f37-b63e-12df3038b44e",
+      "amount": 799,
+      "status": "balanced",
+      "method": "Net Banking",
+      "reconciled": true,
+      "date": "2025-11-23"
+    },
+    {
+      "id": "006",
+      "transaction_id": "TXN-20251124-006",
+      "order_id": "e3fa6df2-fbee-4ed4-b92e-b72f0c4bd782",
+      "amount": 55.75,
+      "status": "failed",
+      "method": "Credit Card",
+      "reconciled": false,
+      "date": "2025-11-24",
+      "issue": "Transaction failed but order marked as paid"
+    },
+    {
+      "id": "007",
+      "transaction_id": "TXN-20251124-007",
+      "order_id": "91c4fc0a-3500-42b6-9e2d-bf3ac9d7e991",
+      "amount": 320,
+      "status": "pending",
+      "method": "Wallet",
+      "reconciled": false,
+      "date": "2025-11-24"
+    },
+    {
+      "id": "008",
+      "transaction_id": "TXN-20251125-008",
+      "order_id": "f5a9c012-bad4-4f15-905a-c0585c92f99f",
+      "amount": 150.49,
+      "status": "balanced",
+      "method": "UPI",
+      "reconciled": true,
+      "date": "2025-11-25"
+    },
+    {
+      "id": "009",
+      "transaction_id": "TXN-20251125-009",
+      "order_id": "ab12fd45-0192-4578-a46b-ccf233fb22ae",
+      "amount": 999.99,
+      "status": "mismatch",
+      "method": "Credit Card",
+      "reconciled": false,
+      "date": "2025-11-25",
+      "issue": "Duplicate transaction detected"
+    },
+    {
+      "id": "010",
+      "transaction_id": "TXN-20251125-010",
+      "order_id": "de884f50-f44c-4c6b-b867-99507d80c443",
+      "amount": 45,
+      "status": "balanced",
+      "method": "Cash on Delivery",
+      "reconciled": true,
+      "date": "2025-11-25"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "500",
+      "merchant_id": 1,
+      "subject": "Refund request",
+      "customer": "Aman Verma",
+      "priority": "Low",
+      "category": "Payment",
+      "status": "resolved",
+      "assigned_to": "1",
+      "created_at": "2025-11-05",
+      "description": "Customer is requesting a refund for a failed transaction."
+    },
+    {
+      "id": "501",
+      "subject": "Order not delivered",
+      "customer": "Zoro",
+      "merchant_id": "b225",
+      "priority": "Medium",
+      "category": "Order",
+      "status": "open",
+      "assigned_to": "2",
+      "created_at": "2025-11-25",
+      "description": "Package marked as delivered but not received by customer."
+    },
+    {
+      "id": "502",
+      "subject": "Wrong item received",
+      "customer": "Riya Sharma",
+      "merchant_id": "a101",
+      "priority": "High",
+      "category": "Order",
+      "status": "in_progress",
+      "assigned_to": "3",
+      "created_at": "2025-11-24",
+      "description": "Customer received a different product than what was ordered."
+    },
+    {
+      "id": "503",
+      "subject": "Payment failed but amount deducted",
+      "customer": "Arjun Patel",
+      "merchant_id": "c309",
+      "priority": "High",
+      "category": "Payment",
+      "status": "open",
+      "assigned_to": "1",
+      "created_at": "2025-11-23",
+      "description": "Money debited from account but order was not confirmed."
+    },
+    {
+      "id": "504",
+      "subject": "Delayed refund",
+      "customer": "Sneha Iyer",
+      "merchant_id": "b225",
+      "priority": "Medium",
+      "category": "Refund",
+      "status": "pending",
+      "assigned_to": "2",
+      "created_at": "2025-11-22",
+      "description": "Refund not received even after 7 working days."
+    },
+    {
+      "id": "505",
+      "subject": "Account blocked issue",
+      "customer": "Rahul Mehta",
+      "merchant_id": "d412",
+      "priority": "Low",
+      "category": "Account",
+      "status": "resolved",
+      "assigned_to": "4",
+      "created_at": "2025-11-20",
+      "description": "Account was temporarily blocked without clear reason."
+    },
+    {
+      "id": "506",
+      "subject": "Order cancellation failed",
+      "customer": "Neha Singh",
+      "merchant_id": "a101",
+      "priority": "Medium",
+      "category": "Order",
+      "status": "open",
+      "assigned_to": "3",
+      "created_at": "2025-11-25",
+      "description": "Unable to cancel the order from the app."
+    },
+    {
+      "id": "507",
+      "subject": "Coupon not applied",
+      "customer": "Vikram Rao",
+      "merchant_id": "c309",
+      "priority": "Low",
+      "category": "Promo",
+      "status": "open",
+      "assigned_to": "2",
+      "created_at": "2025-11-21",
+      "description": "Discount coupon code not working at checkout."
+    },
+    {
+      "id": "508",
+      "subject": "Damaged product received",
+      "customer": "Pooja Desai",
+      "merchant_id": "b225",
+      "priority": "High",
+      "category": "Order",
+      "status": "in_progress",
+      "assigned_to": "1",
+      "created_at": "2025-11-25",
+      "description": "Item arrived broken and unusable."
+    },
+    {
+      "id": "509",
+      "subject": "Invoice not generated",
+      "customer": "Karan Malhotra",
+      "merchant_id": "d412",
+      "priority": "Low",
+      "category": "Billing",
+      "status": "pending",
+      "assigned_to": "4",
+      "created_at": "2025-11-19",
+      "description": "Invoice not available in the order history."
+    }
+  ]
+}
