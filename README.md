@@ -67,18 +67,20 @@ The portal supports multiple user roles (Agent, Manager, Admin) and includes mod
 Follow these steps:
 
 # 1️⃣ Clone the Project
-git clone https://github.com/parthbamane/E-commerce-portal.git
+    -git clone https://github.com/parthbamane/E-commerce-portal.git
 
-cd operations-portal
+    -cd operations-portal
 
 # 2️⃣ Install Dependencies
-npm install
+    -npm install
 
 # 3️⃣ Start Frontend + JSON Server Together
-npm run start:all
+    -npm run start:all
 
-Frontend runs at:
-http://localhost:5173
+
+
+# Frontend runs at:
+    -http://localhost:5173
 
 # 🔐 Available Login Accounts
 
@@ -93,23 +95,23 @@ Use these credentials:
 You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
-### 👤 USERS
-    - Stores user roles (agent / manager / admin)
-    - Fields: id, username, password, role, name
+## 👤 USERS
+- Stores user roles (agent / manager / admin)
+- Fields: id, username, password, role, name
 
-### 🏪 MERCHANTS
-    - Merchant onboarding + verification
-    - Fields: businessName, businessType, address, taxId,
+## 🏪 MERCHANTS
+- Merchant onboarding + verification
+- Fields: businessName, businessType, address, taxId,
               contact details, documents, status, created_at
 
-### 📦 ORDERS
-    - Customer orders + payment details
-    - Fields: customer, merchant, amount, status,
+## 📦 ORDERS
+- Customer orders + payment details
+- Fields: customer, merchant, amount, status,
               payment_method, items[], created_at
 
-### 💳 RECONCILIATIONS
-    - Payment gateway vs internal record matching
-    - Fields: transaction_id, amount, status, method,
+## 💳 RECONCILIATIONS
+- Payment gateway vs internal record matching
+- Fields: transaction_id, amount, status, method,
               reconciled, issue?, date
 
 ### 🎫 TICKETS
