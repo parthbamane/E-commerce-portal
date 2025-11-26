@@ -67,20 +67,20 @@ The portal supports multiple user roles (Agent, Manager, Admin) and includes mod
 Follow these steps:
 
 # 1️⃣ Clone the Project
-    -git clone https://github.com/parthbamane/E-commerce-portal.git
+    git clone https://github.com/parthbamane/E-commerce-portal.git
 
-    -cd operations-portal
+    cd operations-portal
 
 # 2️⃣ Install Dependencies
-    -npm install
+    npm install
 
 # 3️⃣ Start Frontend + JSON Server Together
-    -npm run start:all
+    npm run start:all
 
 
 
 # Frontend runs at:
-    -http://localhost:5173
+    http://localhost:5173
 
 # 🔐 Available Login Accounts
 
@@ -114,9 +114,9 @@ You can modify these in db.json → users[]
 - Fields: transaction_id, amount, status, method,
               reconciled, issue?, date
 
-### 🎫 TICKETS
-    - Support ticket management system
-    - Fields: subject, priority, category, status,
+## 🎫 TICKETS
+- Support ticket management system
+- Fields: subject, priority, category, status,
               assigned_to, description, created_at
 
 
