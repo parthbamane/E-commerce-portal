@@ -93,43 +93,41 @@ Use these credentials:
 You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
-# Description of all collections in db.json
-
-# ---------------- USERS ----------------
-# Stores app users for login + role-based access.
+##---------------- USERS ----------------
+# Stores app users for login + RBAC.
 # Fields:
-#   id, username, password, role (agent/manager/admin), name
+#   id, username, password, role, name
 
-# ---------------- MERCHANTS ----------------
-# Merchant onboarding system.
+##----------------- MERCHANTS ----------------
+# Merchant onboarding + verification system.
 # Fields:
-#   id, businessName, businessType, businessAddress,
-#   taxId, contactName, contactEmail, contactPhone,
-#   documents { idProof, businessLicense },
-#   status (active/pending/suspended),
+#   id, businessName, businessType, businessAddress
+#   taxId, contactName, contactEmail, contactPhone
+#   documents { idProof, businessLicense }
+#   status (active/pending/suspended)
 #   created_at
 
-# ---------------- ORDERS ----------------
-# Customer orders + product items + payment info.
+##----------------- ORDERS ----------------
+# Customer orders + items + payment + status.
 # Fields:
-#   id, merchant_id, merchant, customer, amount,
-#   status (pending/processing/shipped/delivered/etc),
-#   payment_method, created_at,
+#   id, merchant_id, merchant, customer
+#   amount, status, payment_method, created_at
 #   items[] { product_id, name, qty, price }
 
-# ---------------- RECONCILIATIONS ----------------
-# Used for payment matching and reconciliation.
+##----------------- RECONCILIATIONS ----------------
+# Payment reconciliation between gateway + internal data.
 # Fields:
-#   id, transaction_id, order_id, amount,
-#   status (balanced/mismatch/failed/pending),
-#   method, reconciled (true/false), date, issue?
+#   id, transaction_id, order_id, amount
+#   status (balanced/mismatch/failed/pending)
+#   method, reconciled, date, issue?
 
 # ---------------- TICKETS ----------------
-# Support ticket management system.
+# Support ticket management.
 # Fields:
-#   id, subject, customer, merchant_id,
-#   priority, category, status,
+#   id, subject, customer, merchant_id
+#   priority, category, status
 #   assigned_to, created_at, description
+
 
 
 
