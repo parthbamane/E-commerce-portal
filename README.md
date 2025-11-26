@@ -150,6 +150,10 @@ You can modify these in db.json → users[]
      ├── providers/
      │   ├── AuthProvider.jsx
      │
+     ├── auth/
+     │   ├──axios.js
+     │   ├──RoleGuard.jsx
+     │
      ├── App.jsx
      ├── main.jsx
 
