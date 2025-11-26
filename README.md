@@ -93,40 +93,26 @@ Use these credentials:
 You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
-##---------------- USERS ----------------
-# Stores app users for login + RBAC.
-# Fields:
-#   id, username, password, role, name
+### 👤 USERS
+# • Handles authentication
+# • Stores user roles (agent / manager / admin)
+# • Fields: id, username, password, role, name
 
-##----------------- MERCHANTS ----------------
-# Merchant onboarding + verification system.
-# Fields:
-#   id, businessName, businessType, businessAddress
-#   taxId, contactName, contactEmail, contactPhone
-#   documents { idProof, businessLicense }
-#   status (active/pending/suspended)
-#   created_at
+### 🏪 MERCHANTS
+# • Merchant onboarding & verification
+# • Fields: businessName, type, documents, status, contacts, taxId
 
-##----------------- ORDERS ----------------
-# Customer orders + items + payment + status.
-# Fields:
-#   id, merchant_id, merchant, customer
-#   amount, status, payment_method, created_at
-#   items[] { product_id, name, qty, price }
+### 📦 ORDERS
+# • Order data + payment info + items list
+# • Fields: customer, merchant, amount, status, items[], payment_method
 
-##----------------- RECONCILIATIONS ----------------
-# Payment reconciliation between gateway + internal data.
-# Fields:
-#   id, transaction_id, order_id, amount
-#   status (balanced/mismatch/failed/pending)
-#   method, reconciled, date, issue?
+### 💳 RECONCILIATIONS
+# • Payment reconciliation + mismatch detection
+# • Fields: transaction_id, amount, status, reconciled, issue?
 
-# ---------------- TICKETS ----------------
-# Support ticket management.
-# Fields:
-#   id, subject, customer, merchant_id
-#   priority, category, status
-#   assigned_to, created_at, description
+### 🎫 TICKETS
+# • Support ticket system
+# • Fields: subject, category, priority, status, assigned_to, description
 
 
 
