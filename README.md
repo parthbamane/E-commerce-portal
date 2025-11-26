@@ -93,44 +93,44 @@ Use these credentials:
 You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
-# 📦 Mock Backend API (JSON-Server)
+# Description of all collections in db.json
 
-# Users (/users)
-# - Authentication + role-based access
-# - Fields: id, username, password, role (agent/manager/admin), name
-# - Supports login + role changes
-GET /users
-GET /users/:id
-PATCH /users/:id
-POST /users
+# ---------------- USERS ----------------
+# Stores app users for login + role-based access.
+# Fields:
+#   id, username, password, role (agent/manager/admin), name
 
-# Merchants (/merchants)
-# - Merchant onboarding + verification
-# - Fields: businessName, type, documents, status (active/pending/suspended)
-GET /merchants
-GET /merchants/:id
-POST /merchants
-PATCH /merchants/:id
+# ---------------- MERCHANTS ----------------
+# Merchant onboarding system.
+# Fields:
+#   id, businessName, businessType, businessAddress,
+#   taxId, contactName, contactEmail, contactPhone,
+#   documents { idProof, businessLicense },
+#   status (active/pending/suspended),
+#   created_at
 
-# Orders (/orders)
-# - Customer orders + items + payment details
-# - Fields: amount, items[], status (processing/shipped/delivered/etc)
-GET /orders
-GET /orders/:id
-PATCH /orders/:id
+# ---------------- ORDERS ----------------
+# Customer orders + product items + payment info.
+# Fields:
+#   id, merchant_id, merchant, customer, amount,
+#   status (pending/processing/shipped/delivered/etc),
+#   payment_method, created_at,
+#   items[] { product_id, name, qty, price }
 
-# Reconciliation (/reconciliations)
-# - Payment gateway vs internal data matching
-# - Fields: transaction_id, amount, status (balanced/mismatch/etc), reconciled
-GET /reconciliations
-PATCH /reconciliations/:id
+# ---------------- RECONCILIATIONS ----------------
+# Used for payment matching and reconciliation.
+# Fields:
+#   id, transaction_id, order_id, amount,
+#   status (balanced/mismatch/failed/pending),
+#   method, reconciled (true/false), date, issue?
 
-# Tickets (/tickets)
-# - Support ticketing system
-# - Fields: subject, priority, category, status, assigned_to
-GET /tickets
-POST /tickets
-PATCH /tickets/:id
+# ---------------- TICKETS ----------------
+# Support ticket management system.
+# Fields:
+#   id, subject, customer, merchant_id,
+#   priority, category, status,
+#   assigned_to, created_at, description
+
 
 
 # 🛡 Role Access Rules
