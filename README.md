@@ -10,18 +10,6 @@ The portal supports multiple user roles (Agent, Manager, Admin) and includes mod
 - Admin Panel (User Role Management)
 - Dashboard with Stats & Recent Orders
 
-# 📌 Table of Contents
-
-- Features
-- Tech Stack
-- Local Setup
-- Available Login Accounts
-- Mock Backend API (JSON-Server)
-- API Endpoints
-- Data Structure
-- Role Access Rules
-- Project Structure
-
 # ⭐ Features
 
 ## ✅ Dashboard
