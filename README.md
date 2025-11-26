@@ -93,6 +93,8 @@ Use these credentials:
 You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
+# 📦 Mock Backend API (JSON-Server)
+
 # Users (/users)
 # - Authentication + role-based access
 # - Fields: id, username, password, role (agent/manager/admin), name
@@ -129,6 +131,7 @@ PATCH /reconciliations/:id
 GET /tickets
 POST /tickets
 PATCH /tickets/:id
+
 
 # 🛡 Role Access Rules
 
