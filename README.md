@@ -94,26 +94,28 @@ You can modify these in db.json → users[]
 
 # 📦 Mock Backend API (JSON-Server)
 ### 👤 USERS
-# • Handles authentication
-# • Stores user roles (agent / manager / admin)
-# • Fields: id, username, password, role, name
+    - Stores user roles (agent / manager / admin)
+    - Fields: id, username, password, role, name
 
 ### 🏪 MERCHANTS
-# • Merchant onboarding & verification
-# • Fields: businessName, type, documents, status, contacts, taxId
+    - Merchant onboarding + verification
+    - Fields: businessName, businessType, address, taxId,
+              contact details, documents, status, created_at
 
 ### 📦 ORDERS
-# • Order data + payment info + items list
-# • Fields: customer, merchant, amount, status, items[], payment_method
+    - Customer orders + payment details
+    - Fields: customer, merchant, amount, status,
+              payment_method, items[], created_at
 
 ### 💳 RECONCILIATIONS
-# • Payment reconciliation + mismatch detection
-# • Fields: transaction_id, amount, status, reconciled, issue?
+    - Payment gateway vs internal record matching
+    - Fields: transaction_id, amount, status, method,
+              reconciled, issue?, date
 
 ### 🎫 TICKETS
-# • Support ticket system
-# • Fields: subject, category, priority, status, assigned_to, description
-
+    - Support ticket management system
+    - Fields: subject, priority, category, status,
+              assigned_to, description, created_at
 
 
 
