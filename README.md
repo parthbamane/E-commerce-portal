@@ -1,140 +1,202 @@
-# 🚀 Operations Portal 
+🚀 Operations Portal – README
 
 A complete internal operations dashboard built with React, TailwindCSS, React Router, and a JSON-Server mock backend.
 The portal supports multiple user roles (Agent, Manager, Admin) and includes modules for:
 
-- Merchant Onboarding
-- Order Tracking
-- Payment Reconciliation
-- Support Ticket Management
-- Admin Panel (User Role Management)
-- Dashboard with Stats & Recent Orders
+• Merchant Onboarding
+• Order Tracking
+• Payment Reconciliation
+• Support Ticket Management
+• Admin Panel (User Role Management)
+• Dashboard with Stats & Recent Orders
 
-# ⭐ Features
+📌 Table of Contents
+- Features
+- Tech Stack
+- Local Setup
+- Available Login Accounts
+- Mock Backend API (JSON-Server)
+- API Endpoints
+- Data Structure
+- Role Access Rules
+- Project Structure
 
-## ✅ Dashboard
-- Displays summary cards
-- Shows the last 3 recent orders
-- Quick-action shortcuts
+⭐ FEATURES
+------------------------------------
+✅ Dashboard
+• Summary cards  
+• Last 3 recent orders  
+• Quick-action shortcuts
 
-## ✅ Merchants Module
-- Add merchants using a 3-step onboarding wizard
-- Approve/Reject merchants
-- View merchants list
+✅ Merchants Module
+• Add merchants (3-step wizard)  
+• Approve / Reject  
+• View list  
 
-## ✅ Orders Module
-- Search and filter orders
-- View order details
-- Update order status (Processing → Shipped → Delivered)
+✅ Orders Module
+• Search + Filter  
+• View details  
+• Status updates (Processing → Shipped → Delivered)
 
-## ✅ Payment Reconciliation
-- Admin/Manager only
-- Select unreconciled items and reconcile them
-- Status badges, selectable rows, and toast notifications
+✅ Payment Reconciliation
+• Admin/Manager only  
+• Select + reconcile  
+• Toast notifications  
 
-## ✅ Support Tickets
-- Create, filter, search tickets
-- Update ticket status (Open → In progress → Resolved)
-- Auto-assign to logged-in user
+✅ Support Tickets
+• Create/search/filter  
+• Status updates  
+• Auto-assign to user  
 
-## ✅ Notifications
-- Dropdown with unread count badge
-- Closes on outside click
-- Placeholder real-time entries
+✅ Notifications
+• Dropdown  
+• Outside click close  
 
-## ✅ Admin Panel
-- Only for Admin users
-- Role management (agent, manager, admin)
+✅ Admin Panel
+• Role management (agent / manager / admin)
 
-## ✅ Authentication + Role-based Access
-- Login/logout
-- Navigation changes based on role
-- Route protection
+✅ Authentication + Role-based Access
+• Login/logout  
+• Protected routes  
+• Sidebar changes based on role  
 
-# 🛠 Tech Stack
 
-| Area      | Technology        |
-|-----------|-------------------|
-| UI        | React, TailwindCSS |
-| Routing   | React Router      |
-| Icons     | Lucide Icons      |
-| Backend   | JSON Server       |
-| Auth      | Custom AuthProvider |
-| State     | React Hooks       |
+🛠 TECH STACK
+------------------------------------
+UI: React + TailwindCSS  
+Routing: React Router  
+Icons: Lucide Icons  
+Backend: JSON Server  
+State: React Hooks  
+Auth: Custom AuthProvider  
 
-# 🧑‍💻 Local Setup
 
-# 1️⃣ Clone the Project
+🧑‍💻 LOCAL SETUP
+------------------------------------
+
+1️⃣ Clone the Project
+------------------------------------
 git clone <repo-url>
-
 cd operations-portal
 
-# 2️⃣ Install Dependencies
+
+2️⃣ Install Dependencies
+------------------------------------
 npm install
 
-# 3️⃣ Start Frontend + JSON Server Together
+
+3️⃣ Start Frontend + Backend Together
+------------------------------------
 npm run start:all
 
 
-Frontend runs at:
-http://localhost:5173
+4️⃣ Or start manually:
+------------------------------------
+# Start JSON Server
+npx json-server --watch db.json --port 4000
 
-# 🔐 Available Login Accounts
+# Start Frontend
+npm run dev
 
-Use these credentials:
 
-| Role    | Username  | Password |
-|---------|-----------|----------|
-| Admin   | admin     | pass     |
-| Manager | manager1  | pass     |
-| Agent   | agent1    | pass     |
+🔐 AVAILABLE LOGIN ACCOUNTS
+------------------------------------
+ROLE        USERNAME     PASSWORD
+Admin       admin        pass
+Manager     manager1     pass
+Agent       agent1       pass
 
-You can modify these in db.json → users[]
 
-# 📡 Mock Backend API (JSON-Server)
+📡 MOCK BACKEND API (JSON-SERVER)
+------------------------------------
+Users:
+  GET    /users
+  POST   /users
+  PATCH  /users/:id
 
-Your backend is powered by JSON Server, which provides automatic REST APIs from db.json.
+Merchants:
+  GET    /merchants
+  POST   /merchants
+  PATCH  /merchants/:id
 
-# API Endpoints
+Orders:
+  GET    /orders
+  PATCH  /orders/:id
 
-## 📌 Users
-GET    /users  
-POST   /users  
-PATCH  /users/:id  
+Tickets:
+  GET    /tickets
+  POST   /tickets
+  PATCH  /tickets/:id
 
-## 📌 Merchants
-GET    /merchants  
-POST   /merchants  
-PATCH  /merchants/:id  
+Reconciliations:
+  GET    /reconciliations
+  PATCH  /reconciliations/:id
 
-## 📌 Orders
-GET    /orders  
-PATCH  /orders/:id  
 
-## 📌 Tickets
-GET    /tickets  
-POST   /tickets  
-PATCH  /tickets/:id  
+🗂 SAMPLE DATA STRUCTURE (db.json)
+------------------------------------
+{
+  "users": [
+    { "id": 1, "username": "admin", "role": "admin", "password": "pass" },
+    { "id": 2, "username": "manager1", "role": "manager", "password": "pass" },
+    { "id": 3, "username": "agent1", "role": "agent", "password": "pass" }
+  ],
 
-## 📌 Reconciliations
-GET    /reconciliations  
-PATCH  /reconciliations/:id  
+  "merchants": [
+    {
+      "id": 1,
+      "businessName": "ABC Retail",
+      "businessType": "retail",
+      "status": "pending"
+    }
+  ],
 
-# 🗂 Data Structure (db.json)
+  "orders": [
+    {
+      "id": "ORD-1001",
+      "customer": "John Doe",
+      "status": "processing",
+      "amount": 120.5,
+      "created_at": "2025-01-18"
+    }
+  ],
 
-# 🛡 Role Access Rules
+  "tickets": [
+    {
+      "id": 1,
+      "subject": "Payment failed",
+      "customer": "Alice",
+      "priority": "High",
+      "status": "open",
+      "assigned_to": 3
+    }
+  ],
 
-| Feature                | Agent | Manager | Admin |
-|------------------------|-------|---------|-------|
-| Dashboard              | ✅    | ✅      | ✅    |
-| Merchants              | ✅    | ✅      | ✅    |
-| Orders                 | ✅    | ✅      | ✅    |
-| Tickets                | ✅    | ✅      | ✅    |
-| Payments (Reconciliation) | ❌ | ✅      | ✅    |
-| Admin Panel            | ❌    | ❌      | ✅    |
+  "reconciliations": [
+    {
+      "id": 1,
+      "transaction_id": "TXN-001",
+      "amount": 85,
+      "status": "pending",
+      "reconciled": false
+    }
+  ]
+}
 
-# 📦 Project Structure
 
+🛡 ROLE ACCESS RULES
+------------------------------------
+FEATURE                Agent   Manager   Admin
+Dashboard               ✔️       ✔️        ✔️
+Merchants               ✔️       ✔️        ✔️
+Orders                  ✔️       ✔️        ✔️
+Tickets                 ✔️       ✔️        ✔️
+Payments                ❌       ✔️        ✔️
+Admin Panel             ❌       ❌        ✔️
+
+
+📦 PROJECT STRUCTURE
+------------------------------------
 src/
  ├── components/
  │   ├── Layout.jsx
@@ -154,4 +216,3 @@ src/
  │
  ├── App.jsx
  ├── main.jsx
-
