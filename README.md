@@ -1,4 +1,4 @@
-# 🚀 Operations Portal – README
+# 🚀 Operations Portal 
 
 A complete internal operations dashboard built with React, TailwindCSS, React Router, and a JSON-Server mock backend.
 The portal supports multiple user roles (Agent, Manager, Admin) and includes modules for:
