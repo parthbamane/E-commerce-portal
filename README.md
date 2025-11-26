@@ -134,23 +134,23 @@ You can modify these in db.json → users[]
 
 # 📦 Project Structure
 
-src/
- ├── components/
- │   ├── Layout.jsx
- │   ├── ProtectedRoute.jsx
- │
- ├── pages/
- │   ├── Login.jsx
- │   ├── Dashboard.jsx
- │   ├── MerchantOnboarding.jsx
- │   ├── OrderTracking.jsx
- │   ├── Reconciliation.jsx
- │   ├── Tickets.jsx
- │   ├── AdminPanel.jsx
- │
- ├── providers/
- │   ├── AuthProvider.jsx
- │
- ├── App.jsx
- ├── main.jsx
+    src/
+     ├── components/
+     │   ├── Layout.jsx
+     │   ├── ProtectedRoute.jsx
+     │
+     ├── pages/
+     │   ├── Login.jsx
+     │   ├── Dashboard.jsx
+     │   ├── MerchantOnboarding.jsx
+     │   ├── OrderTracking.jsx
+     │   ├── Reconciliation.jsx
+     │   ├── Tickets.jsx
+     │   ├── AdminPanel.jsx
+     │
+     ├── providers/
+     │   ├── AuthProvider.jsx
+     │
+     ├── App.jsx
+     ├── main.jsx
 
