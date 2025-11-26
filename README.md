@@ -64,28 +64,16 @@ The portal supports multiple user roles (Agent, Manager, Admin) and includes mod
 
 # 🧑‍💻 Local Setup
 
-Follow these steps:
-
-## 1️⃣ Clone the Project
+# 1️⃣ Clone the Project
 git clone <repo-url>
 cd operations-portal
 
-## 2️⃣ Install Dependencies
+# 2️⃣ Install Dependencies
 npm install
 
-## 3️⃣ Start Mock Backend (JSON Server)
+# 3️⃣ Start Frontend + JSON Server Together
+npm run start:all
 
-Mock API runs on port 4000:
-
-npx json-server --watch db.json --port 4000
-
-You should see:
-http://localhost:4000/users
-http://localhost:4000/orders
-
-
-## 4️⃣ Run Frontend
-npm run dev
 
 Frontend runs at:
 http://localhost:5173
